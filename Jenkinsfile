@@ -27,7 +27,7 @@ pipeline {
                     sh 'echo "Hi" > filenew'
                     sh 'git add filenew'
                     sh 'git commit -m "Jenkins build: ${BUILD_NUMBER}"'
-                    sh 'git push origin main'  // Modify branch name as needed
+                    sh 'git push -u origin main'  // Modify branch name as needed
                 }
             }
         }
