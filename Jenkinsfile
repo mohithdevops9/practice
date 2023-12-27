@@ -27,7 +27,7 @@ pipeline {
                     sh 'echo "Hi" > added_git'
                     sh 'git add added_git'
                     sh 'git commit -m "Jenkins build: ${BUILD_NUMBER}"'
-                    sh 'git checkout -b main'
+                    //sh 'git checkout -b main'
                     sh 'git remote set-url origin git@github.com:mohithdevops9/practice.git'
                     sh 'git push -u origin main'  // Modify branch name as needed
                 }
