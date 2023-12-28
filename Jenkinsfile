@@ -24,9 +24,9 @@ pipeline {
                     sh 'git config user.name "mohithdevops9"'
                     
                     // Commit and push changes
-                    sh 'echo "Hi" > added_git'
-                    sh 'git add added_git'
-                    sh 'git commit -m "Jenkins build: ${BUILD_NUMBER}"'
+                    sh 'echo "Hi" > newfile'
+                    sh 'git add newfile'
+                    sh 'git commit -m "added from jenkins file :Jenkins build: ${BUILD_NUMBER}"'
                     //sh 'git checkout -b main'
                     sh 'git remote set-url origin git@github.com:mohithdevops9/practice.git'
                     sh 'git push --set-upstream origin main'  // Modify branch name as needed
