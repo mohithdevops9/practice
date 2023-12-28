@@ -28,7 +28,6 @@ pipeline {
                     sh 'git add newfile'
                     sh 'git commit -m "added from jenkins file :Jenkins build: ${BUILD_NUMBER}"'
                     //sh 'git checkout -b main'
-                    sh 'git remote set-url origin git@github.com:mohithdevops9/practice.git'
                     sh 'git push --set-upstream origin main'  // Modify branch name as needed
                 }
             }
