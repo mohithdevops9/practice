@@ -29,7 +29,7 @@ pipeline {
                     sh 'git commit -m "Jenkins build: ${BUILD_NUMBER}"'
                     //sh 'git checkout -b main'
                     sh 'git remote set-url origin git@github.com:mohithdevops9/practice.git'
-                    sh 'git push -u origin main'  // Modify branch name as needed
+                    sh 'git push --set-upstream origin main'  // Modify branch name as needed
                 }
             }
         }
